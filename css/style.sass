@@ -1,0 +1,195 @@
+@import define
+
+body
+    background-color: #202020
+
+#wrapper
+    margin: 0 auto
+    width: 700px
+    
+    section
+        padding: 30px 15px
+        text-align: center
+        height: 200px
+        
+        div
+            margin: 0 auto
+        
+    section:nth-of-type(even)
+        background-color: rgba(255, 255, 255, .1)
+        
+    section:nth-of-type(odd)
+        background-color: rgba(255, 255, 255, .3)
+    
+    header
+        
+        h1
+            font-family: 'league gothic', sans-serif
+            font-size: 100px
+            text-align: center
+            padding-bottom: 20px
+            padding-top: 20px
+            display: block
+            color: #fff
+            text-transform: uppercase
+            
+        p
+            text-align: center
+            color: $coral
+            text-transform: uppercase
+            font-family: 'league gothic', sans-serif
+            font-size: 40px
+            font-weight: 300
+            letter-spacing: 2px
+            padding-bottom: 30px
+            
+    h2
+        font-family: 'league gothic', sans-serif
+        font-size: 50px
+        font-weight: 300
+        color: #fff
+        letter-spacing: 1px 
+        text-transform: uppercase
+        
+    #circle
+        width: 70px
+        height: 70px
+        display: block
+        margin-top: 20px
+        background-color: #202020
+        border-radius: 60px
+        border: 5px solid #fff
+        box-shadow: 0 0 10px #000, inset 5px 5px 10px rgba( 255, 255, 255, .3)
+        
+        &:hover
+            background-color: $teal
+            box-shadow: 0 0 10px #000, inset -10px -10px 10px rgba( 0, 0, 0, .2)
+            cursor: pointer
+            
+            
+    #square
+        width: 70px
+        height: 70px
+        display: block
+        margin-top: 20px
+        background-color: #202020
+        border: 5px solid #fff
+        box-shadow: 0 0 10px #000, inset 5px 5px 10px rgba( 255, 255, 255, .3)
+        
+        &:hover
+            background-color: $teal
+            box-shadow: 0 0 10px #000, inset -10px -10px 10px rgba( 0, 0, 0, .2)
+            cursor: pointer
+            
+    #triangle
+        width: 0px
+        height: 0px
+        display: block
+        margin-bottom: 30px
+        border: 45px solid transparent
+        border-bottom: 70px solid #fff
+        position: relative
+        
+        &:before
+            content: ''
+            width: 0px
+            height: 0px
+            display: block
+            margin-bottom: 30px
+            border: 35px solid transparent
+            border-bottom: 55px solid #202020
+            position: absolute
+            top: -26px
+            left: -35px
+            
+    #diamond
+        width: 80px
+        height: 80px
+        display: block
+        background-color: #fff
+        -moz-transform: rotate(45deg)
+        -webkit-transfrom: rotate(45deg)
+        margin-top: 40px
+        
+
+    #star
+        width: 0px
+        height: 0px
+        display: block
+        margin-top: 70px
+        border: 70px solid transparent
+        border-top: 50px solid #fff
+        position: relative
+        
+        &:hover
+            border-top: 50px solid $teal
+            cursor: pointer
+            
+            &:before, &:after
+                border-top: 50px solid $teal
+
+        
+        &:before
+            content: ''
+            -moz-transform: rotate(-69deg)
+            -webkit-transform: rotate(-69deg)
+            width: 0px
+            height: 0px
+            display: block
+            margin-top: 20px
+            border: 70px solid transparent
+            border-top: 50px solid #fff
+            position: absolute
+            top: -90px
+            left: -39px
+            
+            
+        &:after
+            content: ''
+            -moz-transform: rotate(69deg)
+            -webkit-transform: rotate(69deg)
+            width: 0px
+            height: 0px
+            display: block
+            margin-top: 20px
+            border: 70px solid transparent
+            border-top: 50px solid #fff
+            position: absolute
+            top: -90px
+            right: -39px
+            
+    #heart
+        width: 0px
+        height: 0px
+        display: block
+        margin-top: 85px
+        border: 70px solid transparent
+        border-top: 70px solid #fff
+        position: relative
+        
+        
+        &:before
+            width: 75px
+            height: 70px
+            border-top-left-radius: 90px
+            border-top-right-radius: 90px
+            border-bottom-left-radius: 80px
+            display: block
+            background-color: #fff
+            content: ''
+            position: absolute
+            top: -125px
+            left: -75px    
+            
+        &:after    
+            width: 75px
+            height: 70px
+            border-top-left-radius: 90px
+            border-top-right-radius: 90px
+            border-bottom-right-radius: 80px
+            display: block
+            background-color: #fff
+            content: ''
+            position: absolute
+            top: -125px
+            right: -75px    

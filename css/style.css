@@ -1,0 +1,164 @@
+body {
+  background-color: #202020; }
+
+#wrapper {
+  margin: 0 auto;
+  width: 700px; }
+  #wrapper section {
+    padding: 30px 15px;
+    text-align: center;
+    height: 200px; }
+    #wrapper section div {
+      margin: 0 auto; }
+  #wrapper section:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.1); }
+  #wrapper section:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.3); }
+  #wrapper header h1 {
+    font-family: "league gothic", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: block;
+    color: white;
+    text-transform: uppercase; }
+  #wrapper header p {
+    text-align: center;
+    color: #f29d88;
+    text-transform: uppercase;
+    font-family: "league gothic", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-bottom: 30px; }
+  #wrapper h2 {
+    font-family: "league gothic", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  #wrapper #circle {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-top: 20px;
+    background-color: #202020;
+    border-radius: 60px;
+    border: 5px solid white;
+    box-shadow: 0 0 10px black, inset 5px 5px 10px rgba(255, 255, 255, 0.3); }
+    #wrapper #circle:hover {
+      background-color: #3cc4c4;
+      box-shadow: 0 0 10px black, inset -10px -10px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer; }
+  #wrapper #square {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-top: 20px;
+    background-color: #202020;
+    border: 5px solid white;
+    box-shadow: 0 0 10px black, inset 5px 5px 10px rgba(255, 255, 255, 0.3); }
+    #wrapper #square:hover {
+      background-color: #3cc4c4;
+      box-shadow: 0 0 10px black, inset -10px -10px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer; }
+  #wrapper #triangle {
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-bottom: 30px;
+    border: 45px solid transparent;
+    border-bottom: 70px solid white;
+    position: relative; }
+    #wrapper #triangle:before {
+      content: "";
+      width: 0px;
+      height: 0px;
+      display: block;
+      margin-bottom: 30px;
+      border: 35px solid transparent;
+      border-bottom: 55px solid #202020;
+      position: absolute;
+      top: -26px;
+      left: -35px; }
+  #wrapper #diamond {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: white;
+    -moz-transform: rotate(45deg);
+    -webkit-transfrom: rotate(45deg);
+    margin-top: 40px; }
+  #wrapper #star {
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-top: 70px;
+    border: 70px solid transparent;
+    border-top: 50px solid white;
+    position: relative; }
+    #wrapper #star:hover {
+      border-top: 50px solid #3cc4c4;
+      cursor: pointer; }
+      #wrapper #star:hover:before, #wrapper #star:hover:after {
+        border-top: 50px solid #3cc4c4; }
+    #wrapper #star:before {
+      content: "";
+      -moz-transform: rotate(-69deg);
+      -webkit-transform: rotate(-69deg);
+      width: 0px;
+      height: 0px;
+      display: block;
+      margin-top: 20px;
+      border: 70px solid transparent;
+      border-top: 50px solid white;
+      position: absolute;
+      top: -90px;
+      left: -39px; }
+    #wrapper #star:after {
+      content: "";
+      -moz-transform: rotate(69deg);
+      -webkit-transform: rotate(69deg);
+      width: 0px;
+      height: 0px;
+      display: block;
+      margin-top: 20px;
+      border: 70px solid transparent;
+      border-top: 50px solid white;
+      position: absolute;
+      top: -90px;
+      right: -39px; }
+  #wrapper #heart {
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-top: 85px;
+    border: 70px solid transparent;
+    border-top: 70px solid white;
+    position: relative; }
+    #wrapper #heart:before {
+      width: 75px;
+      height: 70px;
+      border-top-left-radius: 90px;
+      border-top-right-radius: 90px;
+      border-bottom-left-radius: 80px;
+      display: block;
+      background-color: white;
+      content: "";
+      position: absolute;
+      top: -125px;
+      left: -75px; }
+    #wrapper #heart:after {
+      width: 75px;
+      height: 70px;
+      border-top-left-radius: 90px;
+      border-top-right-radius: 90px;
+      border-bottom-right-radius: 80px;
+      display: block;
+      background-color: white;
+      content: "";
+      position: absolute;
+      top: -125px;
+      right: -75px; }
